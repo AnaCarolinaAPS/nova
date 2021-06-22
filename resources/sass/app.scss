@@ -1,0 +1,73 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// VueAgile styles
+.agile{
+	&__nav-button{
+		background: transparent;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		font-size: 24px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		transition-duration: .3s;
+		width: 80px;
+
+		&:hover {
+			background-color: rgba(#000, .5);
+			opacity: 1;
+        }
+		&--prev {
+			left: 0;
+        }
+		&--next {
+			right: 0;
+        }
+    }
+	&__dots{
+		bottom: 10px;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+    }
+	&__dot{
+		margin: 0 10px;
+
+		button {
+			background-color: transparent;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			cursor: pointer;
+			display: block;
+			height: 10px;
+			font-size: 0;
+			line-height: 0;
+			margin: 0;
+			padding: 0;
+			transition-duration: .3s;
+			width: 10px;
+        }
+		&--current,
+		&:hover
+			button {
+				background-color: #fff;
+            }
+    }
+}
+// .slide-banner {
+// 	display: block;
+// 	height: 500px;
+// 	object-fit: cover;
+// 	width: 100%;
+// }
