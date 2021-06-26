@@ -40,21 +40,23 @@ Route::get('/', function () {
         ["id" => 14, "titulo" => "Cosmeticos", "icone" => "img/categorias/15.png", "url" => ""],
     ]);
     $listaProductos = json_encode([
-        ["id" => 0, "idCategoria" => 6, "destacado" => 1, "titulo" => "CABLE RECRSI CA-13 IOS", "precio" => "500.000 gs","url" => "img/productos/CABLE RECRSI CA-13 IOS.jpg"],
-        ["id" => 1, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-13 MICRO USB", "precio" => "600.000 gs","url" => "img/productos/CABLE RECRSI CA-13 MICRO USB.jpg"],
-        ["id" => 2, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-13 TIPO C", "precio" => "520.000 gs","url" => "img/productos/CABLE RECRSI CA-13 TIPO C.png"],
-        ["id" => 3, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-33", "precio" => "550.000 gs","url" => "img/productos/CABLE RECRSI CA-33.jpg"],
-        ["id" => 4, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-221 IOS", "precio" => "501.000 gs","url" => "img/productos/CABLE RECRSI CA-221 IOS.jpg"],
-        ["id" => 5, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-221 TIPO C", "precio" => "500.000 gs","url" => "img/productos/CABLE RECRSI CA-221 TIPO C.jpg"],
-        ["id" => 6, "idCategoria" => 6, "destacado" => 1, "titulo" => "CARGADOR RECRSI  DE GARGA RAPIDA CH-29", "precio" => "200.000 gs","url" => "img/productos/CARGADOR RECRSI  DE GARGA RAPIDA CH-29.jpg"],
-        ["id" => 7, "idCategoria" => 6, "destacado" => 0, "titulo" => "CARGADOR RECRSI CH-14 (CARGA RAPIDA) 2", "precio" => "100.000 gs","url" => "img/productos/CARGADOR RECRSI CH-14 (CARGA RAPIDA) 2.jpg"],
-        ["id" => 8, "idCategoria" => 10, "destacado" => 1, "titulo" => "JOYSTICK GAT QTJGS02 2", "precio" => "550.000 gs","url" => "img/productos/JOYSTICK GAT QTJGS02 2.jpg"],
-        ["id" => 9, "idCategoria" => 10, "destacado" => 1, "titulo" => "JOYSTICK GAT QTJGS02", "precio" => "560.000 gs","url" => "img/productos/JOYSTICK GAT QTJGS02.jpg"],
-        ["id" => 10, "idCategoria" => 7, "destacado" => 1, "titulo" => "NEBUKIZADOR PORTATIL MEGA STAR", "precio" => "800.000 gs","url" => "img/productos/NEBUKIZADOR PORTATIL MEGA STAR.jpg"],
-        ["id" => 11, "idCategoria" => 7, "destacado" => 1, "titulo" => "NEBULIZADOR MEGA STAR", "precio" => "900.000 gs","url" => "img/productos/NEBULIZADOR MEGA STAR.jpg"],
+        ["id" => 0, "idCategoria" => 6, "destacado" => 1, "titulo" => "CABLE RECRSI CA-13 IOS", "precio" => "500.000 gs","url" => "img/productos/CABLE RECRSI CA-13 IOS.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 1, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-13 MICRO USB", "precio" => "600.000 gs","url" => "img/productos/CABLE RECRSI CA-13 MICRO USB.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 2, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-13 TIPO C", "precio" => "520.000 gs","url" => "img/productos/CABLE RECRSI CA-13 TIPO C.png", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 3, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-33", "precio" => "550.000 gs","url" => "img/productos/CABLE RECRSI CA-33.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 4, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-221 IOS", "precio" => "501.000 gs","url" => "img/productos/CABLE RECRSI CA-221 IOS.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 5, "idCategoria" => 6, "destacado" => 0, "titulo" => "CABLE RECRSI CA-221 TIPO C", "precio" => "500.000 gs","url" => "img/productos/CABLE RECRSI CA-221 TIPO C.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 6, "idCategoria" => 6, "destacado" => 1, "titulo" => "CARGADOR RECRSI  DE GARGA RAPIDA CH-29", "precio" => "200.000 gs","url" => "img/productos/CARGADOR RECRSI  DE GARGA RAPIDA CH-29.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 7, "idCategoria" => 6, "destacado" => 0, "titulo" => "CARGADOR RECRSI CH-14 (CARGA RAPIDA) 2", "precio" => "100.000 gs","url" => "img/productos/CARGADOR RECRSI CH-14 (CARGA RAPIDA) 2.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 8, "idCategoria" => 10, "destacado" => 1, "titulo" => "JOYSTICK GAT QTJGS02 2", "precio" => "550.000 gs","url" => "img/productos/JOYSTICK GAT QTJGS02 2.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 9, "idCategoria" => 10, "destacado" => 1, "titulo" => "JOYSTICK GAT QTJGS02", "precio" => "560.000 gs","url" => "img/productos/JOYSTICK GAT QTJGS02.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 10, "idCategoria" => 7, "destacado" => 1, "titulo" => "NEBUKIZADOR PORTATIL MEGA STAR", "precio" => "800.000 gs","url" => "img/productos/NEBUKIZADOR PORTATIL MEGA STAR.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"],
+        ["id" => 11, "idCategoria" => 7, "destacado" => 1, "titulo" => "NEBULIZADOR MEGA STAR", "precio" => "900.000 gs","url" => "img/productos/NEBULIZADOR MEGA STAR.jpg", "descripcion" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, molestiae quaerat blanditiis adipisci veritatis magnam unde, totam commodi porro reprehenderit quo. Ipsa aut quaerat ratione commodi ipsam dolore ullam?"] ,
     ]);
     $primeraCategoria = 0;
-    return view('main', compact('listaBanner', 'listaCategorias', 'primeraCategoria', 'listaProductos'));
+    $whatsapp = "+595973568850";
+    $textowp = "Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20";
+    return view('main', compact('listaBanner', 'listaCategorias', 'primeraCategoria', 'listaProductos', 'whatsapp', 'textowp'));
 
     // return view('main');
 });
@@ -62,3 +64,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/detalle', 'HomeController@index')->name('detalle');

@@ -2,7 +2,6 @@
     <div class="container">
         <carousel :margin="20" :nav="false" :loop="true" :responsive="{0:{items:3,nav:false},600:{items:7,nav:false}}" class="menu-categoria">
             <a v-for="(item, index) in categorias" :key="item.id" v-on:click="setActive(index);changeTitle(item.titulo);" class="menu-icones">
-            <!-- <a v-for="(item, index) in categorias" :key="item.id" v-bind:href="'#'+item.id" v-on:click="setActive(index);changeTitle(item.titulo);" class="menu-icones"> -->
                 <img v-bind:id="index" class="rounded-circle" v-bind:class="{ ' carousel-active':isActive(index) }" v-bind:alt="item.titulo" v-bind:src="item.icone">
                 <div class="text-center">
                     <p v-bind:id="'title-'+index" class="menu-title" v-bind:class="{ ' menu-active':isActive(index) }">{{item.titulo}}</p>
@@ -31,7 +30,9 @@
         <div class="row">
             <div v-for="(item, index) in lista" class="mix col-lg-3 col-md-6 product-grid text-center">
                 <div class="product">
-                    <a href="product.php?id=0">
+                    <a v-on:click="preencheFormulario(item)" data-toggle="modal" v-bind:data-target="'#detalle'">
+                    <!-- <a data-toggle="modal" v-bind:data-target="'#detalle'"> -->
+                    <!-- <a href=""> -->
                         <div class="product-image">
                             <img v-bind:src="item.url" class="img-fluid product-image" alt="producto" style="height: 230px;">
                         </div>
@@ -73,6 +74,9 @@
             },
             setOrden: function () {
                 this.ordemItens = document.getElementById("ordenProductos").value; // no need for Vue.set()
+            },
+            preencheFormulario:function(item){
+                this.$store.commit('setItem', item);
             },
         },
         computed: {

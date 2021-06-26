@@ -12,9 +12,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-                    <!-- <li class="nav-item"><a class="nav-link" href="#">Institucional</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#">Nuestra Empresa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li  class="nav-item" v-for="(item, index) in menus" :key="index">
+                        <a class="nav-link" v-bind:href="item.url">{{ item.menu }}</a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -28,7 +28,7 @@
 
 <script>
     export default {
-        props:['titulo', 'url', 'logo']
+        props:['titulo', 'url', 'logo', 'menus']
     }
 </script>
 

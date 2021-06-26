@@ -24,7 +24,13 @@
 </head>
 <body>
     <div id="app" style="margin-bottom: 0px;">
-        <topo-component titulo="{{ config('app.name', 'Laravel') }}" url="{{ url('/') }}" logo="{{ asset('img/logo.png') }}">
+        @php
+            $menu = json_encode([
+            ["id" => 0, "menu" => "Acerca de Nosotros", "url" => "#" ],
+            ["id" => 1, "menu" => "Nuestras Sucursales", "url" => "#"],
+        ]);
+        @endphp
+        <topo-component titulo="{{ config('app.name', 'Laravel') }}" url="{{ url('/') }}" logo="{{ asset('img/logo.png') }}" v-bind:menus="{{ $menu }}">
         </topo-component>
         @yield('banner')
         <main class="py-4">
