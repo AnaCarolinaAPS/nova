@@ -28,19 +28,6 @@
     }
 </script>
 
-<style>
-    .wap-btn {
-        background-color:#25d366;
-        color:#FFF;
-        border-radius:30px;
-        text-align:center;
-        font-size: 14pt;
-        padding: 5px 10px;
-        box-shadow: 2px 2px 3px #999;
-    }
-    .wap-btn:hover {
-        text-decoration: none;
-        color:#FFF;
-        background-color:#1ea952;
-    }
+<style media="screen">
+
 </style>

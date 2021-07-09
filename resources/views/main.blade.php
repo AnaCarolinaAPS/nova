@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
 @section('banner')
     <carousel-component v-bind:banner="{{ $listaBanner }}">

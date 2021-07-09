@@ -116,7 +116,7 @@
                 }
 
                 if (this.activeItem) {
-                    console.log('Entra!');
+                    // console.log('Entra!');
                     return this.itens.filter(res => {
                         for (let k = 0; k<Object.values(res).length; k++) {
                             // console.log(Object.values(res)['1']+"");
@@ -129,7 +129,7 @@
                     });
                 }
                 if (!this.activeItem) {
-                    console.log('Somente Destacados');
+                    // console.log('Somente Destacados');
                     return this.itens.filter(res => {
                         for (let k = 0; k<Object.values(res).length; k++) {
                             if((Object.values(res)[2]) === 1) {

@@ -59,9 +59,13 @@ Route::get('/', function () {
     return view('main', compact('listaBanner', 'listaCategorias', 'primeraCategoria', 'listaProductos', 'whatsapp', 'textowp'));
 
     // return view('main');
-});
+})->name('site');
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/detalle', 'HomeController@index')->name('detalle');
+Route::get('/inicio', 'HomeController@index')->name('inicio');
+
+Route::middleware('auth')->prefix('admin')->namespace('Admin')->group(function(){
+    Route::resource('categorias', 'CategoriasController');
+});

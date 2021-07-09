@@ -1,5 +1,5 @@
 <template>
-<div>
+<!-- <div> -->
     <agile :options="myOptions" :initial-slide="0" :autoplay-speed="5000" :speed="2500" infinite fade pause-on-hover pause-on-dots-hover autoplay>
         <div class="slide-banner" v-for="(item, index) in banner">
             <!-- <div class="embed-responsive embed-responsive-16by9">
@@ -10,11 +10,12 @@
         <template slot="prevButton"><i class="fa fa-angle-left"></i></template>
         <template slot="nextButton"><i class="fa fa-angle-right"></i></template>
     </agile>
-</div>
+<!-- </div> -->
 </template>
 
 <script>
-    // import { VueAgile } from 'vue-agile'
+    // import VueAgile from 'vue-agile'
+    // Vue.use(VueAgile)
 
     export default {
         components: {
